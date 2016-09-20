@@ -10,21 +10,219 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.jamesvolmert.fitorflab.MainActivity">
+    tools:context="com.example.jamesvolmert.fitorflab.MainActivity"
+    android:background="#404040">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="#6495ED">
+        android:backgroundTint="#6495ED"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="30%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Weight Lifting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold"
+            android:textSize="24sp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="10 Sets"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView4"
+            android:textStyle="normal|bold"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#20000000"
+            android:layout_width="80dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/textView5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:contentDescription="image of barbell"
+            android:src="@drawable/weight"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Do you even lift?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textColor="@android:color/white"
+            android:paddingLeft="5dp"
+            android:paddingBottom="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#BF3EFF">
+
+        <TextView
+            android:text="1 hour"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:textStyle="normal|bold"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#20000000"
+            android:layout_width="80dp"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="15%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="126dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:contentDescription="image of barbell"
+            android:src="@drawable/lotus"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:text="Yoga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold"
+            android:textSize="24sp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="nameste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textColor="@android:color/white"
+            android:paddingLeft="5dp"
+            android:paddingBottom="3dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignEnd="@+id/textView3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#54FF9F"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:text="22%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_marginTop="123dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="5 miles"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textStyle="normal|bold"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#20000000"
+            android:layout_width="80dp"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="@android:color/white"
+            android:paddingLeft="5dp"
+            android:paddingBottom="3dp"
+            android:layout_marginTop="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Run Like Hell" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
             android:contentDescription="image of barbell"
-            android:src="@drawable/weight" />
+            android:src="@drawable/heart"
+            android:layout_marginTop="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Cardio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold"
+            android:textSize="24sp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="5dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 </LinearLayout>
