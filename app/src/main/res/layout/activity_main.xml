@@ -20,7 +20,8 @@
         android:backgroundTint="#6495ED"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:id="@+id/weightBtn">
 
         <TextView
             android:text="30%"
@@ -91,7 +92,8 @@
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="#BF3EFF">
+        android:backgroundTint="#BF3EFF"
+        android:id="@+id/yogaBtn">
 
         <TextView
             android:text="1 hour"
@@ -161,7 +163,8 @@
         android:layout_weight="1"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="#54FF9F"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:id="@+id/heart">
 
         <TextView
             android:text="22%"
