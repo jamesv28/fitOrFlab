@@ -1,5 +1,6 @@
 package com.example.jamesvolmert.fitorflab;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,7 +14,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXERCISE_WEIGHTS = "Weight Lifting";
+    public static final String EXTRA_ITEM_TITLE = "extra.item.title";
+    public static final String EXERCISE_WEIGHTS = "Weightlifting";
     public static final String EXERCISE_YOGA = "Yoga";
     public static final String EXERCISE_CARDIO = "Cardio";
 
@@ -53,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
     // function for knowing which view got selected
 
     private void loadDetailActivity(String exerciseTitle) {
-
+        //  parameters: where is the data coming from and where do you want it to go
+        Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+        intent.putExtra(MainActivity.EXTRA_ITEM_TITLE, exerciseTitle);
+        startActivity(intent);
     }
 
 }  // end of class
